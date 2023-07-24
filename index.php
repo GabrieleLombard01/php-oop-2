@@ -9,6 +9,11 @@ require_once 'Models/FoodProduct.php';
 require_once 'Models/ToyProduct.php';
 require_once 'Models/AccessoryProduct.php';
 
+// CREO le categorie
+$dogCategory = new Dog();
+$catCategory = new Cat();
+$birdCategory = new Bird();
+$fishCategory = new Fish();
 ?>
 
 
