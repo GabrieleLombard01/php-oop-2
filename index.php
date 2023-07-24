@@ -59,6 +59,12 @@ $products = array(
             font-size: 24px;
         }
 
+        footer {
+            background-color: white;
+            width: 100%;
+            min-height: 100px;
+        }
+
         .card {
             border: 1px solid #ddd;
             border-radius: 5px;
@@ -107,6 +113,11 @@ $products = array(
             ?>
         </div>
     </div>
+    <footer>
+        <div class="container">
+            <p class="pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nesciunt dignissimos nulla. Illum, mollitia expedita impedit cum voluptatem, fuga dicta iure, sed ad doloremque et alias dolor facere doloribus consequuntur.</p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 
