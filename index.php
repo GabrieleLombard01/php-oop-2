@@ -32,11 +32,58 @@ $products = array(
 <html>
 
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Animal Shop</title>
+    <style>
+        body {
+            padding-top: 20px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: auto;
+            border-radius: 5px 5px 0 0;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="container">
+        <h1 class="my-4">Animal Shop</h1>
 
+        <h2>Categorie:</h2>
+        <ul>
+            <li><?php echo $dogCategory->getName(); ?></li>
+            <li><?php echo $catCategory->getName(); ?></li>
+            <li><?php echo $birdCategory->getName(); ?></li>
+            <li><?php echo $fishCategory->getName(); ?></li>
+        </ul>
+
+        <h2>Prodotti:</h2>
+        <div class="row">
+            <?php
+            foreach ($products as $product) {
+                echo '<div class="col-md-4">';
+                echo '<div class="card mb-4">';
+                echo '<img src="' . $product->getImage() . '" class="card-img-top" alt="' . $product->getName() . '">';
+                echo '<div class="card-body">';
+                echo '<h5 class="card-title">' . $product->getName() . '</h5>';
+                echo '<p class="card-text">Prezzo: ' . $product->getPrice() . '€</p>';
+                echo '</div>';
+                echo '</div>';
+                echo '</div>';
+            }
+            ?>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
