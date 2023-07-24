@@ -37,6 +37,26 @@ $products = array(
     <style>
         body {
             padding-top: 20px;
+            background-color: #ddd;
+        }
+
+        h2 {
+            font-size: 26px;
+            color: grey;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        ul li {
+            list-style: none;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 24px;
         }
 
         .card {
@@ -51,12 +71,16 @@ $products = array(
             height: auto;
             border-radius: 5px 5px 0 0;
         }
+
+        li:hover {
+            color: darkred;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1 class="my-4">Animal Shop</h1>
+        <h1 class="text-center fw-bold my-4">Animal Shop</h1>
 
         <h2>Categorie:</h2>
         <ul>
